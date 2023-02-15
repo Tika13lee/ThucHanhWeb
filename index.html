@@ -51,7 +51,55 @@
             margin-top: 30px;
             box-shadow: 0 0 10px;
             padding-left: 0;
-            /* margin-left: 0; */
+        }
+        .bai5a{
+            width: 50%;
+            box-shadow: 0 0 10px;
+            margin-top: 30px;
+            padding-left: 10px;
+        }
+        .bai5a h2, ul{
+            margin-bottom: 15px;
+        }
+        .bai5a > a{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .bai5b{
+            width: 70%;
+            margin-top: 30px;
+            box-shadow: 0 0 10px;
+            padding-left: 8px;
+        }
+        .bai5b h2, ul, p{
+            margin-bottom: 15px;
+        }
+        .bai5b > a{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .bai6a{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .bai6a > table{
+            border: 10px solid #ffd078;
+            border-spacing: 3;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #ffd078;
+            box-shadow: 0 0 10px;
+        }
+        .bai6b{
+            background-color: #ffd078;
+            width: 175px;
+            padding: 5px ;
+            box-shadow: 0 0 10px;
+            margin-bottom: 30px;
+        }
+        .bai6b > table > tr > td > a{
+            color: red;
         }
     </style>
 </head>
@@ -148,6 +196,160 @@
                 </ol>
             </ol>
         </ol style="list-style: upper-roman;">
+    </div>
+    <div class="bai5a">
+        <h2>Example Cafe Menu</h2>
+        <a href="#">Starters</a>
+        <a href="#">Main Courses</a>
+        <a href="#">Desserts</a>
+        <h2>Starters</h2>
+        <ul>
+            <li>Chestnut and Mushroom Goujons</li>
+            <li>Goat Cheese Salad</li>
+            <li>Honey Soy Chicken Kebabs</li>
+            <li>Seafood Salad</li>
+        </ul>
+        <a href="#">Back to top</a>
+        <h2>Main courses</h2>
+        <ul>
+            <li>Spinach and Ricotta Roulade (<a href="#">v</a>)</li>
+            <li>Beef Tournados with Mustard and Dill Sauce</li>
+            <li>Roast Chicken Salad</li>
+            <li>Icelandic Cod with Parsley Sauce</li>
+            <li>Mushroom Wellington (<a href="#">v</a>)</li>
+        </ul>
+        <a href="#">Back to top</a>
+        <h2>Desserts</h2>
+
+        <ul>
+            <li>Lemon Sorbet (<a href="#">v</a>)</li>
+            <li>Chocolate Mud Pie (<a href="#">v</a>)</li>
+            <li>Pecen Pie (<a href="#">v</a> )</li>
+            <li>Selection of Fine Cheeses from Aroundthe World</li>
+        </ul>
+        <a href="#">Back to top</a>
+        <p>Items marked with a (<a href="#">v</a>) are suitable for vegetarians.</p>
+    </div>
+    <div class="bai5b">
+        <h2>Linking and Naviga tion</h2> 
+        <p>This page cover the following topics:</p>
+        <ul>
+            <li><a href="#">URLs</a></li>
+            <li><a href="#">Source Anchors</a></li>
+            <li><a href="#">Destination Anchors</a></li>
+            <li><a href="#">Examples</a></li>
+        </ul>
+        <h2>URLs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae maiores voluptates minus omnis obcaecati sint molestiae temporibus laboriosam! Dolore dignissimos facere ad dicta labore provident sint voluptas illo distinctio?
+        Placeat temporibus, ipsum obcaecati deleniti porro odit perferendis cupiditate esse quidem maiores laboriosam molestias, fuga quisquam nam suscipit et iusto. Nam magnam blanditiis, assumenda dicta maxime ea alias velit eum!</p>
+        <a href="#">Back to top</a>
+        <h2>Source Anchors</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis nam? Maiores ipsum consectetur exercitationem eveniet rem sequi officia, nostrum quam molestias laudantium accusantium iure quis illo harum, sint provident?
+        Expedita, dolores. Velit eum non aliquam vero, praesentium alias veritatis nostrum, modi aliquid, ea magnam doloribus quo ipsa! Ullam autem saepe soluta nobis magnam veritatis. Hic nihil voluptatum totam esse.</p>
+        <a href="#">Back to top</a>
+    </div>
+    <div class="bai6a">
+        <table border="20">
+            <tr>
+                <td style="background-color: white;">1</td>
+                <td colspan="4" style="background-color: white;">2</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="background-color: white;">3</td>
+                <td style="background-color: orange;">4</td>
+                <td style="background-color: orange;">5</td>
+                <td colspan="2" rowspan="2" style="background-color: yellow;">6</td>
+            </tr>
+            <tr>
+                <td style="background-color: orange;">7</td>
+                <td style="background-color: orange;">8</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: yellow;">9</td>
+                <td colspan="2" style="background-color: yellow;">10</td>
+            </tr>
+        </table>
+    </div>
+    <div class="bai6b">
+        <table border="1">
+            <tr>
+                <td>(1)</td>
+                <td>(2)</td>
+                <td>(3)</td>
+                <td colspan="3">(4)</td>
+                <td>(5)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="5"><a style="color: red;" href="" >Part I</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4"><a style="color: red"; href="">Chapter 1</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionA</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionB</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4"><a style="color: red"; href="">Chapter 2</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionA</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionB</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="5"><a style="color: red"; href="">Part II</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4"><a style="color: red"; href="">Chapter 1</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionA</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionB</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4"><a style="color: red"; href="">Chapter 2</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionA</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><a style="color: red"; href="">SectionB</a></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
