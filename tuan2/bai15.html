@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai15</title>
+    <style>
+        .bai15 {
+            width: 500px;
+            box-shadow: 0 0 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bai15">
+        <fieldset>
+            <legend>Your message:</legend>
+            <table>
+                <tr>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe"></td>
+                </tr>
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+                <tr>
+                    <td><label for="emailBody">Message</label></td>
+                    <td><textarea name="txtBode" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <table>
+                <tr>
+                    <td><label for="lbl1">How did you hear of us</label></td>
+                    <td>
+                        <select name="" id="lbl1">
+                            <option value="google">Google</option>
+                            <option value="youtube">Youtube</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lbl2">Newsletter</label></td>
+                    <td>
+                        <input type="checkbox" name="" id="lbl3">
+                        <label for="lbl3">Ensure this box is checked if you would like to receive email updates</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="button" value="Sent message">
+    </div>
+</body>
+</html>
