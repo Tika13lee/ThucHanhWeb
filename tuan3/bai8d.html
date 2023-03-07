@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai8d</title>
+    <style>
+        .bai8d{
+            margin: auto;
+            width: 50%;
+            box-shadow: 0 0 10px;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table td:first-child{
+            background-color: rgb(236, 240, 240);
+        }
+        table td:last-child{
+            text-align: right;
+        }
+        .border{
+            border-top: 15px solid #85C226;
+            border-bottom: 15px solid #4493A0;
+            border-left: 15px solid #DF127B;
+            border-right: 15px solid #F7C200;
+            border-radius: 0px 30px 70px 20px;
+            text-align: center;
+            width: 80%;
+            margin-left: 100px;
+        }
+        .info{
+            margin-left: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bai8d">
+        <div class="info">
+            <h2>Border Radius</h2>
+            <p>Syntax : <span class="blue">border-radius:</span> <span class="red">(top-left) (top-right) (bottom-right) (bottom-left);</span> <br> Example: <span class="blue">border-radius:</span> <span class="red">0px 30px 70px 20px</span></p>
+            <p>For displaying round corners Border Radius property is used. <br> IE9 and Opera use the same code. For Firefox a prefix <span class="green">"-moz- "</span> needs to be added before the code. And for Webkit Browsers <span class="green">"-webkit- "</span> needs to be added before the code.</p>
+            <p>Box-shadow property for all the browsers</p>
+            <table>
+                <tr>
+                    <td>For IE and Opera</td>
+                    <td><span class="blue">box-shadow:</span> <span class="red">0px 30px 70px 20px</span></td>
+                </tr>
+                <tr>
+                    <td>For Mozilla Firefox</td>
+                    <td><span class="blue">-moz-box-shadow:</span> <span class="red">0px 30px 70px 20px</span></td>
+                </tr>
+                <tr>
+                    <td>For Webkit Browsers</td>
+                    <td><span class="blue">-webkit-box-shadow</span> <span class="red">0px 30px 70px 20px</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="border">
+            <p>No Border radius (0px) has been applied on the top-left (green-pink) corner. <br>Border radius ( 30px) has been applied on the top-right (green-yellow) corner. <br>Border radius (20px) has been applied on the bottom-left (blue-pink) corner. <br>Border radius ( 70px) has been applied on the bottom-right (blue-yellow) corner.</p>
+        </div>
+    </div>
+</body>
+</html>
