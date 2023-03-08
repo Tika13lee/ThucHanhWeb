@@ -3,12 +3,35 @@
     margin: 0;
 }
 #wrapper {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
     font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    color: #323842;
 }
 
 #container {
-    width: 85%;
+    width: 80%;
+    /* height: 100%; */
     margin: auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+
+/* dinh dang the h2 */
+.tagH2{
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+/* dinh dang gia tien */
+.price{
+    font-size: 30px;
+
+}
+/* mau chu */
+.textColor{
+    color: #88898c;
 }
 
 /* menu */
@@ -16,9 +39,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
+    height: 100px;
     background-color: #b0c9e3;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 #menu-left {
@@ -62,12 +85,12 @@
     justify-content: space-between;
 }
 
-.btnSeller, .btnSeller1, .btnSeller2, .btnSeller3 {
+.btnSeller, .btnSeller1 {
     height: 30px;
     width: 80px;
     background-color: #ffc970;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #img-best {
@@ -82,17 +105,20 @@
 
 #home-items1 {
     text-align: left;
+    padding: 0 100px;
 }
 
 /* product */
-#products {
+
+#products-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 100px;
 }
 
 .product-img{
     position: relative;
+    margin-bottom: 25px;
 }
 
 .btnSeller1{
@@ -101,11 +127,17 @@
     right: 10px;
 }
 
-.price {
+.price-container {
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
 }
-
+.price-item{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    justify-content: space-between;
+}
 
 /* benefits */
 
