@@ -1,0 +1,83 @@
+    /* * {
+    margin: auto;
+} */
+    
+    #menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #menu-left {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
+    
+    #menu-right {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+    
+    #benefits {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #benefits-item {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+    }
+    /* #ingredients {
+    width: 80%;
+} */
+    /* #ingredients {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    #ingredients-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #ingredients-container p {
+        width: 70%;
+    }
+    /* .ingredients-item {
+    display: flex;
+    flex-direction: column;
+} */
+    
+    #faqs {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+    
+    #fasq-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .faqs-item details {
+        border: 2px solid;
+        border-radius: 10px;
+    }
+    
+    .faqs-item p {
+        width: 80%;
+    }
+    
+    #products {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .price {
+        display: flex;
+        justify-content: space-between;
+    }
