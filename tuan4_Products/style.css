@@ -1,83 +1,172 @@
-    /* * {
+*{
+    padding: 0;
+    margin: 0;
+}
+#wrapper {
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 85%;
     margin: auto;
-} */
+}
+
+/* menu */
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: #b0c9e3;
+    margin-bottom: 65px;
+}
+
+#menu-left {
+    display: flex;
+    justify-content: space-around;
+    width: 27%;
+}
+
+#menu-right {
+    display: flex;
+    width: 25%;
+}
+
+.search{
+    height: 36px; 
+    width: 210px;
+    border-radius: 5px;
+}
+
+/* home */
+.home-menu{
+    margin-bottom: 20px;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+#home-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home-items {
+    display: flex;
     
-    #menu {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    #menu-left {
-        display: flex;
-        justify-content: space-between;
-        width: 25%;
-    }
-    
-    #menu-right {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-    }
-    
-    #benefits {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    #benefits-item {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        align-items: center;
-    }
-    /* #ingredients {
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnSeller, .btnSeller1, .btnSeller2, .btnSeller3 {
+    height: 30px;
+    width: 80px;
+    background-color: #ffc970;
+    border: none;
+    border-radius: 10px;
+}
+
+#img-best {
+    position: relative;
+}
+
+.btnSeller{
+    position: absolute;
+    left: -10;
+    right: 0;
+}
+
+#home-items1 {
+    text-align: left;
+}
+
+/* product */
+#products {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.product-img{
+    position: relative;
+}
+
+.btnSeller1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* benefits */
+
+#benefits {
+    display: flex;
+    justify-content: space-between;
+}
+
+#benefits-item {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: center;
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.color {
+    color: #323842;
+}
+
+/* #ingredients {
     width: 80%;
 } */
-    /* #ingredients {
+/* #ingredients {
         margin: auto;
         display: flex;
         flex-direction: column;
     } */
-    
-    #ingredients-container {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    #ingredients-container p {
-        width: 70%;
-    }
-    /* .ingredients-item {
+
+#ingredients-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ingredients-container p {
+    width: 70%;
+}
+
+/* .ingredients-item {
     display: flex;
     flex-direction: column;
 } */
-    
-    #faqs {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-    }
-    
-    #fasq-item {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .faqs-item details {
-        border: 2px solid;
-        border-radius: 10px;
-    }
-    
-    .faqs-item p {
-        width: 80%;
-    }
-    
-    #products {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .price {
-        display: flex;
-        justify-content: space-between;
-    }
+
+#faqs {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+#fasq-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.faqs-item details {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.faqs-item p {
+    width: 80%;
+}
+
