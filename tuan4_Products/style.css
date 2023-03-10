@@ -1,40 +1,38 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 #wrapper {
     /* display: flex;
     flex-direction: column;
     justify-content: space-around; */
-    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
-    color: #323842;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #323842; */
+    color: #88898c;
 }
 
 #container {
     width: 80%;
-    /* height: 100%; */
     margin: auto;
+    /* height: 100%; */
     /* display: flex;
     flex-direction: column;
     justify-content: space-around; */
 }
 
 /* dinh dang the h2 */
-.tagH2{
-    margin-bottom: 40px;
+.tagH2 {
     font-size: 40px;
+    color: #323842;
 }
-/* dinh dang gia tien */
-.price{
-    font-size: 30px;
 
-}
 /* mau chu */
-.textColor{
-    color: #88898c;
+.textColor {
+    color: #323842;
 }
 
-.greenColor{
+.greenColor {
     color: #60ab8d;
 }
 
@@ -44,7 +42,7 @@
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: #b0c9e3;
+    /* background-color: #e3b0b0; */
     margin-bottom: 50px;
 }
 
@@ -59,27 +57,28 @@
     /* width: 20%; */
 }
 
-.search{
-    height: 36px; 
+.search {
+    height: 36px;
     width: 210px;
     border-radius: 5px;
 }
 
 /* home */
-.home-menu{
+.home-menu {
     margin-bottom: 20px;
     display: flex;
     width: 30%;
     justify-content: space-between;
 }
+
 #home-container {
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-around;
 }
 
+/* home-items */
 #home-items {
-    display: flex;  
+    display: flex;
 }
 
 #img-container {
@@ -89,36 +88,106 @@
     height: 97%;
 }
 
-.btnSeller, .btnSeller1 {
+.btnSeller,
+.btnSeller1 {
     height: 30px;
     width: 80px;
     background-color: #ffc970;
     border: none;
     border-radius: 20px;
+    color: #88898c;
 }
 
 #img-best {
     position: relative;
 }
 
-.btnSeller{
+.btnSeller {
     position: absolute;
-    left: -10;
+    top: 9px;
     right: 0;
 }
 
+/* home-items1 */
 #home-items1 {
-    padding: 0 100px;
+    padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+    /* height: 580px; */
+    justify-content: space-between;
 }
 
-#review{
+.home-price {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .size-price {
+    font-size: 38px;
+    color: #459d7a;
+} */
+
+/* review */
+#review {
     display: flex;
     justify-content: space-between;
     width: 70%;
 }
 
-.vertical{
+.vertical {
     vertical-align: super;
+}
+
+.size {
+    height: 46px;
+    width: 560px;
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons_added{
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+}
+
+.is-form {
+    background-color: #f3f4f6;
+    border: none;
+    width: 40px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+/* order */
+#order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-items {
+    border: 1px solid #459d7a;
+    width: 275px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.order-items.add {
+    background-color: #fff;
+    color: #459d7a;
+}
+
+.order-items.check {
+    background-color: #459d7a;
+    border: none;
+    color: #f3f4f6;
 }
 
 /* product */
@@ -129,12 +198,12 @@
     margin-bottom: 100px;
 }
 
-.product-img{
+.product-img {
     position: relative;
     margin-bottom: 25px;
 }
 
-.btnSeller1{
+.btnSeller1 {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -145,11 +214,39 @@
     display: flex;
     justify-content: space-between;
 }
-.price-item{
+
+.price-item {
     display: flex;
     align-items: center;
     width: 33%;
     justify-content: space-between;
+}
+
+/* dinh dang gia tien */
+.price {
+    font-size: 30px;
+    color: #323842;
+}
+
+/* menu-container */
+#menu-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 54px;
+    margin-bottom: 50px;
+}
+.menu-items{
+    color: #459d7a;
+    font-size: 20px;
+}
+
+.ben{
+    background-color: #c5e6d9;
+    height: 54px;
+    width: 225px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* benefits */
@@ -157,19 +254,16 @@
 #benefits {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #benefits-item {
     display: flex;
     flex-direction: column;
-    width: 35%;
-    align-items: center;
-    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 500px;
     font-size: 18px;
-}
-
-.color {
-    color: #323842;
 }
 
 /* #ingredients {
@@ -214,4 +308,3 @@
 .faqs-item p {
     width: 80%;
 }
-
