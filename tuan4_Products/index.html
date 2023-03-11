@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,7 +41,7 @@
                     <p>Details</p>
                 </div>
                 <div id="home-container">
-                    <div id="home-items">
+                    <div id="home-items-left">
                         <div id="img-container">
                             <div><img src="./photo/Image 1.png" alt=""></div>
                             <div><img src="./photo/Image 1 (1).png" alt=""></div>
@@ -53,26 +53,26 @@
                             <button class="btnSeller">Best Seller</button>
                         </div>
                     </div>
-                    <div id="home-items1">
-                        <h2 class="tagH2">Products Name</h2>
+                    <div id="home-items-right">
+                        <h1 class="txtColor">Products Name</h1>
                         <p>Aliquip fugiat ipsum nostrud ex et eu incididunt</p>
                         <div class="home-price">
-                            <b class="tagH2 greenColor">$32</b>
+                            <b class="txtSize greenColor">$32</b>
                             <p>$42</p>
                         </div>
                         <p>In ullamco labore mollit et exercitation fugiat exercitation minim ex sint ullamco exercitation amet officia mollit. Qui cillum pariatur in con</p>
                         <div id="review">
                             <div>
-                                <b class="textColor">368</b>
+                                <b class="txtColor">368</b>
                                 <span>review</span>
                             </div>
                             <div>
-                                <b class="textColor">823</b>
+                                <b class="txtColor">823</b>
                                 <span>sold</span>
                             </div>
                             <div>
                                 <img src="./photo/Rating 1.png" alt="">
-                                <span class="vertical textColor">4.5</span>
+                                <span class="vertical txtColor">4.5</span>
                             </div>
                         </div>
                         <div>
@@ -84,13 +84,13 @@
                             <span class="vertical">Free + easy returns</span>
                         </div>
                         <div>
-                            <h3 class="textColor">Choose size</h3>
+                            <h3 class="txtColor">Choose size</h3>
                             <select name="size" id="size" class="size">
                                 <option value="size">50.00ML</option>
                             </select>
                         </div>
                         <div>
-                            <h3 class="textColor">Quantity</h3>
+                            <h3 class="txtColor">Quantity</h3>
                             <div class="buttons_added">
                                 <div>
                                     <img src="./photo/Button 1 (3).png" alt="">
@@ -112,14 +112,14 @@
                 </div>
             </div>
             <div id="products">
-                <h2 class="tagH2">Related Products</h2>
+                <h2 class="txtColor txtSize">Related Products</h2>
                 <div id="products-container">
                     <div class="product-item">
                         <div class="product-img">
                             <img src="./photo/Image 1 (5).png" alt="">
                         </div>
-                        <h3 class="textColor">Product title </h3>
-                        <p class="textColor">Labore sint ipsum dolore mollit</p>
+                        <h3 class="txtColor">Product title </h3>
+                        <p>Labore sint ipsum dolore mollit</p>
                         <div class="price-container">
                             <div class="price-item">
                                 <b class="price">$32</b>
@@ -133,8 +133,8 @@
                             <img src="./photo/Image 1 (6).png" alt="">
                             <button class="btnSeller1">Best-seller</button>
                         </div>
-                        <h3 class="textColor">Product title </h3>
-                        <p class="textColor">Labore sint ipsum dolore mollit</p>
+                        <h3 class="txtColor">Product title </h3>
+                        <p>Labore sint ipsum dolore mollit</p>
                         <div class="price-container">
                             <div class="price-item">
                                 <b class="price">$22</b>
@@ -148,8 +148,8 @@
                             <img src="./photo/Image 1 (7).png" alt="">
                             <button class="btnSeller1">Best-seller</button>
                         </div>
-                        <h3 class="textColor">Product title </h3>
-                        <p class="textColor">Labore sint ipsum dolore mollit</p>
+                        <h3 class="txtColor">Product title </h3>
+                        <p>Labore sint ipsum dolore mollit</p>
                         <div class="price-container">
                             <div class="price-item">
                                 <b class="price">$56</b>
@@ -163,8 +163,8 @@
                             <img src="./photo/Image 1 (8).png" alt="">
                             <button class="btnSeller1">Best-seller</button>
                         </div>
-                        <h3 class="textColor">Product title </h3>
-                        <p class="textColor">Labore sint ipsum dolore mollit</p>
+                        <h3 class="txtColor">Product title </h3>
+                        <p>Labore sint ipsum dolore mollit</p>
                         <div class="price-container">
                             <div class="price-item">
                                 <b class="price">$16</b>
@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div id="menu-container">
-                <button class=" menu-items ben">Benefits</button> 
+                <button class=" menu-items ben">Benefits</button>
                 <div class="menu-items">Ingredients</div>
                 <div class="menu-items">How to use</div>
                 <div class="menu-items">Reviews</div>
@@ -185,98 +185,137 @@
             <div id="benefits">
                 <div id="benefits-item">
                     <div>
-                        <h2 class="tagH2">Benefits</h2>
-                        <p>Consectetur excepteur elit ullamco incididunt voluptate tempor
-                            exercitation. Lorem commodo ullamco quis velit officia aute laboris elit sit exercitation ut
-                            esse pariatur occaecat quis</p>
+                        <h1 class="txtColor txtSize">Benefits</h1>
+                        <p>Consectetur excepteur elit ullamco incididunt voluptate tempor exercitation. Lorem commodo ullamco quis velit officia aute laboris elit sit exercitation ut esse pariatur occaecat quis</p>
                     </div>
                     <div>
-                        <h3 class="textColor">Laboris consequat ad</h3>
-                        <p>Consectetur excepteur elit ullamco incididunt voluptate tempor
-                            exercitation. Lorem commodo ullamco quis velit officia aute laboris elit sit exercitation ut
-                            esse pariatur</p>
+                        <h3 class="txtColor">Laboris consequat ad</h3>
+                        <p>Consectetur excepteur elit ullamco incididunt voluptate tempor exercitation. Lorem commodo ullamco quis velit officia aute laboris elit sit exercitation ut esse pariatur</p>
                     </div>
                     <div>
-                        <h3 class="textColor">Duis suis do labore pariatur</h3>
-                        <p>Ad qui aliqua nulla nostrud consectetur laboris nostrud commodo voluptate.
-                            Lorem id qui laborum aute voluptate</p>
+                        <h3 class="txtColor">Duis suis do labore pariatur</h3>
+                        <p>Ad qui aliqua nulla nostrud consectetur laboris nostrud commodo voluptate. Lorem id qui laborum aute voluptate</p>
                     </div>
                     <div>
-                        <h3 class="textColor">Deserunt ex</h3>
-                        <p>Cupidatat culpa id do laboris nisi aliqua eu. Veniam aliqua duis Lorem
-                            adipisicing et minim velit quis</p>
+                        <h3 class="txtColor">Deserunt ex</h3>
+                        <p>Cupidatat culpa id do laboris nisi aliqua eu. Veniam aliqua duis Lorem adipisicing et minim velit quis</p>
                     </div>
                 </div>
                 <div><img src="./photo/Image 1 (9).png" alt=""></div>
             </div>
             <div id="ingredients">
-                <h2 class="tagH2">Ingredients</h2>
+                <h1 class="txtColor">Ingredients</h1>
                 <div id="ingredients-container">
                     <div class="ingredients-item">
                         <img src="./photo/Image 1 (10).png" alt="">
-                        <h3>Hyaluronic</h3>
-                        <p class="textColor">Elit do sit excepteur duis labore nisi sit anim adipisicing duis incididunt
-                            sit anim sint est exercitation aute consectetur irure</p>
-
+                        <h2 class="txtColor">Hyaluronic</h2>
+                        <p>Elit do sit excepteur duis labore nisi sit anim adipisicing duis incididunt sit anim sint est exercitation aute consectetur irure</p>
                     </div>
-                    <div>
+                    <div class="ingredients-item">
                         <img src="./photo/Image 1 (11).png" alt="">
-                        <h3>Green tea</h3>
-                        <p class="textColor">Tempor adipisicing aute pariatur magna enim Lorem voluptate incididunt
-                            culpa ex veniam sunt occaecat tempor</p>
+                        <h2 class="txtColor">Green tea</h2>
+                        <p>Tempor adipisicing aute pariatur magna enim Lorem voluptate incididunt culpa ex veniam sunt occaecat tempor</p>
                     </div>
-                    <div>
+                    <div class="ingredients-item">
                         <img src="./photo/Image 1 (12).png" alt="">
-                        <h3>Olive oil</h3>
-                        <p class="textColor">Cupidatat culpa id do laboris nisi aliqua eu.Veniam aliqua duis Lorem
-                            adipisicing et minim velit quis</p>
+                        <h2 class="txtColor">Olive oil</h2>
+                        <p>Cupidatat culpa id do laboris nisi aliqua eu.Veniam aliqua duis Lorem adipisicing et minim velit quis</p>
                     </div>
                 </div>
+                <button class="order-items add see">See full list</button>
             </div>
             <div id="how">
-                <h2 class="tagH2">How to use</h2>
+                <h1 class="txtColor txtSize">How to use</h1>
                 <img src="./photo/Image 1 (14).png" alt="">
             </div>
-            <div id="faqs">
-                <div class="faqs-item">
-                    <details>
-                        <summary>Nisi nisi magna nostrud non consequat conse</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos dolorum temporibus doloribus sed tenetur atque doloremque, itaque facilis repellat autem ipsa voluptatum, labore magni quam voluptate fugit expedita porro.</p>
-                    </details>
-                    <details>
-                        <summary>Nisi nisi magna nostrud non consequat conse</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos dolorum
-                            temporibus doloribus sed tenetur atque doloremque, itaque facilis repellat autem ipsa
-                            voluptatum, labore magni quam voluptate fugit expedita porro.</p>
-                    </details>
-                    <details>
-                        <summary>Nisi nisi magna nostrud non consequat conse</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos dolorum
-                            temporibus doloribus sed tenetur atque doloremque, itaque facilis repellat autem ipsa
-                            voluptatum, labore magni quam voluptate fugit expedita porro.</p>
-                    </details>
+            <div id="reviews">
+                <div id="reviews-top">
+                    <h1 class="txtColor txtSize">Reviews</h1>
+                    <button class="order-items add write">
+                        <img src="./photo/write.png" alt="">
+                        <span class="vertical">Write a review</span>
+                    </button>
                 </div>
-                <div class="faqs-item">
-                    <details>
-                        <summary>Nisi nisi magna nostrud non consequat conse</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos dolorum
-                            temporibus doloribus sed tenetur atque doloremque, itaque facilis repellat autem ipsa
-                            voluptatum, labore magni quam voluptate fugit expedita porro.</p>
-                    </details>
-                    <details>
-                        <summary>Nisi nisi magna nostrud non consequat conse</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos dolorum
-                            temporibus doloribus sed tenetur atque doloremque, itaque facilis repellat autem ipsa
-                            voluptatum, labore magni quam voluptate fugit expedita porro.</p>
-                    </details>
-                    <details>
-                        <summary>Nisi nisi magna nostrud non consequat conse</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos dolorum
-                            temporibus doloribus sed tenetur atque doloremque, itaque facilis repellat autem ipsa
-                            voluptatum, labore magni quam voluptate fugit expedita porro.</p>
-                    </details>
-                </div>
+                <div id="reviews-bottom">
+                    <div id="vote">
+                        <div class="vote-items">
+                            <b class="txtColor txtSize">4.5</b>
+                            <img src="./photo/Rating 1.png" alt="">
+                            <span>368 Reviewer</span>
+                        </div>
+                        <div class="vote-items">
+                            <span class="vertical">5</span>
+                            <img src="./photo/Rating 1 (2).png" alt="">
+                            <img class="ver" src="./photo/Slider 1.png" alt="">
+                            <span class="vertical">60%</span>
+                        </div>
+                        <div class="vote-items">
+                            <span class="vertical">4</span>
+                            <img src="./photo/Rating 1 (2).png" alt="">
+                            <img class="ver" src="./photo/Slider 1.png" alt="">
+                            <span class="vertical">25%</span>
+                        </div>
+                        <div class="vote-items">
+                            <span class="vertical">3</span>
+                            <img src="./photo/Rating 1 (2).png" alt="">
+                            <img class="ver" src="./photo/Slider 1.png" alt="">
+                            <span class="vertical">10%</span>
+                        </div>
+                        <div class="vote-items">
+                            <span class="vertical">2</span>
+                            <img src="./photo/Rating 1 (2).png" alt="">
+                            <img class="ver" src="./photo/Slider 1.png" alt="">
+                            <span class="vertical">5%</span>
+                        </div>
+                        <div class="vote-items">
+                            <span class="vertical">1</span>
+                            <img src="./photo/Rating 1 (2).png" alt="">
+                            <img class="ver" src="./photo/Slider 1.png" alt="">
+                            <span class="vertical">0%</span>
+                        </div>
+                    </div>
+                    <div id="comment">
 
+                    </div>
+                </div>
+            </div>
+            <div id="faqs">
+                <h1 class="txtColor txtSize">FAQs</h1>
+                <div id="faqs-container">
+                    <div class="faqs-items">
+                        <div class="info">
+                            <b class="greenColor">Nisi nisi magna nostrud non consequat conse?</b>
+                            <img class="pos" src="./photo/Caret down 1.png" alt="">
+                            <p style="font-size: 14px;">Ullamco enim ut culpa irure non qui est duis et aute proident reprehenderit tempor mollit. Aliquip excepteur nisi culpa reprehenderit adipisicing aliquip excepteur nulla minim.</p>
+                        </div>
+                        <div class="info">
+                            <p class="txtColor">Nostrud eiusmod exercitation duis reprehenderitlaboris ullamco. Magna culpa cillum ?</p>
+                            <img class="pos" src="./photo/Caret right 1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="txtColor">Fugiat pariatur minim eiusmod aute adipisicing aliqua occaecat?</p>
+                            <img class="pos" src="./photo/Caret right 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="faqs-items">
+                        <div class="info">
+                            <p class="txtColor">Nostrud eiusmod exercitation duis ?</p>
+                            <img class="pos" src="./photo/Caret right 1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="txtColor">Velit duis ipsum sint consectetur id sint Lorem minim fugiat. Velit velit veniam ullamco est adipisicing?</p>
+                            <img class="pos" src="./photo/Caret right 1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="txtColor">Deserunt consequat esse occaecat anim sunt quis mollit officia adipisicing incididunt?</p>
+                            <img class="pos" src="./photo/Caret right 1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="txtColor">Aliquip irure mollit deserunt ipsum sit sunt veniam?</p>
+                            <img class="pos" src="./photo/Caret right 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

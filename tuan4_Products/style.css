@@ -8,12 +8,11 @@
     flex-direction: column;
     justify-content: space-around; */
     font-family: Arial, Helvetica, sans-serif;
-    /* color: #323842; */
     color: #88898c;
 }
 
 #container {
-    width: 80%;
+    width: 77.5%;
     margin: auto;
     /* height: 100%; */
     /* display: flex;
@@ -22,13 +21,13 @@
 }
 
 /* dinh dang the h2 */
-.tagH2 {
+.txtSize {
     font-size: 40px;
     color: #323842;
 }
 
 /* mau chu */
-.textColor {
+.txtColor {
     color: #323842;
 }
 
@@ -77,7 +76,7 @@
 }
 
 /* home-items */
-#home-items {
+#home-items-left {
     display: flex;
 }
 
@@ -108,8 +107,8 @@
     right: 0;
 }
 
-/* home-items1 */
-#home-items1 {
+/* home-items-right  */
+#home-items-right {
     padding: 0 90px;
     display: flex;
     flex-direction: column;
@@ -124,12 +123,7 @@
     align-items: center;
 }
 
-/* .size-price {
-    font-size: 38px;
-    color: #459d7a;
-} */
-
-/* review */
+/* home-review */
 #review {
     display: flex;
     justify-content: space-between;
@@ -164,7 +158,7 @@
 
 }
 
-/* order */
+/* home-order */
 #order {
     display: flex;
     justify-content: space-between;
@@ -266,45 +260,83 @@
     font-size: 18px;
 }
 
-/* #ingredients {
-    width: 80%;
-} */
-/* #ingredients {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    } */
+/* ingredients */
+#ingredients {
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
 
 #ingredients-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-#ingredients-container p {
-    width: 70%;
+.ingredients-item {
+    width: 360px;
 }
 
-/* .ingredients-item {
+.see{
+    height: 36px;
+    width: 205px;
+    margin: 0 500px;
+}
+
+/* reviews */
+#reviews{
+    height: 500px;
+    background-color: #fafafb;
+    margin-bottom: 50px;
+}
+
+#reviews-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.write{
+    height: 38px;
+    width: 147px;
+    font-size: 14px;
+}
+
+#reviews-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ver{
+    vertical-align: top;
+}
+
+/* FAQs */
+#faqs-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faqs-items{
     display: flex;
     flex-direction: column;
-} */
-
-#faqs {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
+    justify-content: space-between;
+    width: 50%;
+    height: 300px;
 }
 
-#fasq-item {
-    display: flex;
-    flex-direction: column;
+.pos{
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    /* bottom: 80px; */
 }
 
-.faqs-item details {
-    border: 2px solid;
-    border-radius: 10px;
-}
-
-.faqs-item p {
-    width: 80%;
+.info{
+    position: relative;
+    border: 1px solid #88898c;
+    border-radius: 5px;
+    padding: 15px 13px;
+    width: 85%;
+    font-size: 18px;
 }
