@@ -315,28 +315,99 @@
 #faqs-container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .faqs-items{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
-    height: 300px;
+    height: 330px;
 }
 
 .pos{
     position: absolute;
     right: 13px;
     top: 14px;
-    /* bottom: 80px; */
 }
 
 .info{
     position: relative;
     border: 1px solid #88898c;
     border-radius: 5px;
-    padding: 15px 13px;
-    width: 85%;
+    padding: 20px 55px 20px 5px;
     font-size: 18px;
+}
+
+.left{
+    width: 75%;
+}
+
+/* footer */
+#footer{
+    background-color: #1d2128;
+    height: 450px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 77.5%;
+    margin: auto;
+    color: #f3f4f6;
+}
+
+#footer-left{
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+}
+
+.left-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first{
+    height: 250px;
+}
+
+.second{
+    height: 140px;
+}
+
+.third{
+    height: 180px;
+}
+
+.mail{
+    display: flex;
+    height: 55px;
+}
+
+.input-mail{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #88898c;
+    border-right: none;
+    background-color: #1d2128;
+    color: #f3f4f6;
+    width: 315px;
+}
+
+.subrise{
+    background-color: #60ab8d;
+    color: #f3f4f6;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 130px;
+}
+
+#footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
 }
