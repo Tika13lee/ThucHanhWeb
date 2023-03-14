@@ -20,6 +20,10 @@
     /* margin-bottom: 40px; */
 }
 
+.space{
+    margin-bottom: 30px;
+}
+
 /* mau chu */
 .txtColor {
     color: #323842;
@@ -302,11 +306,18 @@
 
 #reviews{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     height: 600px;
     background-color: #fafafb;
     margin-bottom: 50px;
+}
+
+.reviews-container{
+    width: 77.5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    height: 500px;
 }
 
 #reviews-top{
