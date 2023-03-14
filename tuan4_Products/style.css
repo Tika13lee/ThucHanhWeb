@@ -24,6 +24,7 @@
 .txtSize {
     font-size: 40px;
     color: #323842;
+    /* margin-bottom: 40px; */
 }
 
 /* mau chu */
@@ -71,7 +72,7 @@
 }
 
 #home-container {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     display: flex;
 }
 
@@ -189,7 +190,7 @@
 #products-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .product-img {
@@ -249,6 +250,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 #benefits-item {
@@ -266,7 +268,7 @@
     flex-direction: column;
     height: 430px;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 #ingredients-container {
@@ -284,9 +286,32 @@
     margin: 0 500px;
 }
 
+/* how to use */
+#how{
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.btnWatch{
+    position: absolute;
+    left: 500px;
+    top: 400px;
+    background-color: #171a1f;
+    color: #f3f4f6;
+    font-size: 18px;
+    height: 55px;
+    width: 187px;
+    border-radius: 7px;
+    border: none;
+}
+
 /* reviews */
+
 #reviews{
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
     background-color: #fafafb;
     margin-bottom: 50px;
 }
@@ -307,8 +332,51 @@
     justify-content: space-between;
 }
 
+#vote{  
+    display: flex;
+    flex-direction: column;
+    height: 265px;
+    justify-content: space-between;  
+}
+
 .ver{
     vertical-align: top;
+}
+
+#comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 425px;
+}
+
+.comment-items{
+    line-height: 25px;
+}
+
+.img-comment{
+    display: flex;
+}
+
+.txtS{
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#page{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin-left: 40px;
+}
+
+.circle{
+    border: 1px solid #459d7a;
+    width: 20px;
+    border-radius: 100px;
+    color: #459d7a;
+    text-align: center;
 }
 
 /* FAQs */
@@ -348,7 +416,7 @@
     background-color: #1d2128;
     height: 450px;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 #footer-container{
@@ -356,6 +424,10 @@
     justify-content: space-between;
     width: 77.5%;
     margin: auto;
+    /* color: #f3f4f6; */
+}
+
+.txtWhite{
     color: #f3f4f6;
 }
 
@@ -371,6 +443,16 @@
     justify-content: space-between;
 }
 
+.left-items > select{
+    height: 40px;
+    width: 130px;
+    background-color: #1d2128;
+    color: #f3f4f6;
+    border: 1px solid #f3f4f6;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 .first{
     height: 250px;
 }
@@ -383,9 +465,17 @@
     height: 180px;
 }
 
+#footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
 .mail{
     display: flex;
     height: 55px;
+    position: relative;
 }
 
 .input-mail{
@@ -393,8 +483,16 @@
     border: 1px solid #88898c;
     border-right: none;
     background-color: #1d2128;
-    color: #f3f4f6;
+    color: #88898c;
+    font-size: 16px;
+
     width: 315px;
+}
+
+.img-mail{
+    position: absolute;
+    left: 20px;
+    top: 13px;
 }
 
 .subrise{
@@ -403,11 +501,4 @@
     border: none;
     border-radius: 0 5px 5px 0;
     width: 130px;
-}
-
-#footer-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
 }
