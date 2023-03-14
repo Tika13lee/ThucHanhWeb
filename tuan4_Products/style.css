@@ -4,20 +4,13 @@
 }
 
 #wrapper {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
     font-family: Arial, Helvetica, sans-serif;
     color: #88898c;
 }
 
-#container {
+.container {
     width: 77.5%;
     margin: auto;
-    /* height: 100%; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
 }
 
 /* dinh dang the h2 */
