@@ -109,7 +109,7 @@
 
 .picture-right {
     position: absolute;
-    right: 65px;
+    right: 31px;
     top: 14px;
 }
 
@@ -131,7 +131,7 @@
 .picture-left {
     height: 40px;
     width: 160px;
-    left: 60px;
+    left: 30px;
     top: 13px;
 }
 
@@ -247,16 +247,6 @@ table {
 
 table td:first-child {
     width: 50px;
-}
-
-.cham-status {
-    position: relative;
-}
-
-.chat-status {
-    position: absolute;
-    right: 15px;
-    bottom: -8px;
 }
 
 .chat-hour {
