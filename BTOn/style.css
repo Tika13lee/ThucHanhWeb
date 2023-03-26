@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #d9f0f1;
+}
+
+.wrapper {
+    background-image: url(./images/grass.png), url(./images/back.png);
+    background-repeat: repeat-x, repeat;
+    background-position: bottom, top;
+}
+
+.bg-wrapper{
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    width: 71%;
+    margin: auto;
+    color: #a1a1a3;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    width: 95%;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.green{
+    color: #7ee701;
+}
+
+.blue{
+    color: #70d9e8;
+}
+
+.black{
+    color: #58514e;
+}
+
+.white{
+    color: #d9f0f1;
+}
+
+.size {
+    font-size: 20px;
+    /* margin-bottom: 15px; */
+}
+
+
+
+/* h1 */
+.title{
+    font-size: 45px;
+    text-shadow: 5px 10px 10px #53c7fd;
+}
+
+/* menu */
+.menu{
+    background-color: #53c7fd;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.menu-container{
+    display: flex;
+    width: 600px;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+/* center */
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 355px;
+}
+
+.center-left{
+    width: 53%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+}
+
+.center-img{
+    background-color: #fff;
+    border: 1px solid #a1a1a3;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.right-item{
+    background-color: #f5feff;
+    width: 243px;
+    border-radius: 20px;
+    border: 1px solid #a1a1a3;
+}
+
+.right-top{
+    margin: 20px 10px;
+    line-height: 25px;
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top{
+    height: 200px;
+}
+
+.bottom{
+    height: 145px;
+}
+
+.input{
+    width: 160px;
+    border-radius: 7px;
+}
+.re{
+    display: flex;
+}
+.btn{
+    display: flex;
+    border-radius: 5px;
+    width: 50px;
+}
+
+/* footer */
+#footer{
+    background-color: #53c7fd;
+    height: 88px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9f0f1;
+    font-size: 23px;
+    border-radius: 0 0 10px 10px;
+}
