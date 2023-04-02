@@ -52,6 +52,7 @@
     background-color: #fff6f0;
     height: 583px;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .main-top-container {
@@ -82,17 +83,27 @@
 /* main-center */
 .main-center {
     width: 80%;
-    margin: auto;
+    margin:  0 auto 70px;
 }
 
 .category {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .product-container {
     display: flex;
     justify-content: space-between;
+}
+
+.product-item{
+    border: 1px solid #f2f2f1;
+    border-radius: 0 0 10px 10px;
+}
+
+.rate-container{
+    margin: 17px;
 }
 
 .rate {
