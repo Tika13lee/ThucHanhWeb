@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tuan7</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .form-control {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</button>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">ĐĂNG KÝ TÀI KHOẢN</h1>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-container">
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Tên đăng nhập:</label>
+                                </div>
+                                <div class="col-8 ">
+                                    <input type="text" name="txtUser" id="txtUser" placeholder="Nhập vào tên đăng nhập"
+                                        class="form-control">
+                                </div>
+                                <div class="col-1">
+                                    <span id="er1" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Mật khẩu:</label>
+                                </div>
+                                <div class="col-8 ">
+                                    <input type="password" name="pwd" id="pwd" placeholder="Nhập vào mật khẩu"
+                                        class="form-control">
+                                </div>
+                                <div class="col-1">
+                                    <span id="er1" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Nhập lại mật khẩu:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" name="pwd" id="pwd" placeholder="Nhập vào xác nhận mật khẩu"
+                                        class="form-control">
+                                </div>
+                                <div class="col-1">
+                                    <span id="er1" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="row text-center mb-4 mt-4">
+                                <div class="col-12">
+                                    <h4>THÔNG TIN CÁ NHÂN</h4>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Họ và tên:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" name="txtName" id="txtName"
+                                        placeholder="Nhập vào họ tên (bắt buộc nhập)" class="form-control">
+                                </div>
+                                <div class="col-1">
+                                    <span id="er1" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Ngày sinh:</label>
+                                </div>
+                                <div class="col-5">
+                                    <input type="text" name="txtNgay" id="txtNgay" placeholder="mm/dd/yyyy"
+                                        class="form-control">
+                                </div>
+                                <div class="col-4">
+
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Giới tính:</label>
+                                </div>
+                                <div class="col-4">
+                                    <input type="radio" name="nam" id="nam">
+                                    <span>Nam</span>
+                                    <input type="radio" name="nu" id="nu">
+                                    <span>Nữ</span>
+                                </div>
+                                <div class="col-5"></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Địa chỉ:</label>
+                                </div>
+                                <div class="col-8 ">
+                                    <input type="text" name="txtAddress" id="txtAddress" placeholder="Nhập vào địa chỉ"
+                                        class="form-control">
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Điện thoại:</label>
+                                </div>
+                                <div class="col-8 ">
+                                    <input type="text" name="txtAddress" id="txtAddress"
+                                        placeholder="Nhập vào số điện thoại (9-10 số)" class="form-control">
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3 text-right">
+                                    <label for="">Email:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="email" name="email" id="email" placeholder="Nhập vào email cá nhân theo dạng ten@tencongty.com" class="form-control">
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="col-8 text-right">
+                            <button class="badge-dark btn-success">Đăng ký</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="badge-dark btn-danger" data-dismiss="modal">Hủy</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <script>
+            $(document).ready(function() {
+                $("#myBtn").click(function() {
+                    $("#myModal").modal();
+                });
+            });
+        </script> -->
+    </div>
+</body>
+
+</html>
