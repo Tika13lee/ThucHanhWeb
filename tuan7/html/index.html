@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -20,18 +21,31 @@
             text-align: center;
         }
 
-        .form-control {
+        /* .form-control {
             font-size: 16px;
-        }
+        } */
     </style>
 </head>
 
 <body>
     <div class="container">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</button>
+
+        <table class="table table-bordered table-secondary m-3" id="tb">
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Địa chỉ</th>
+                <th>Điện thoại</th>
+                <th>Email</th>
+            </tr>
+        </table>
+
         <!-- The Modal -->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog">
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
 
                     <!-- Modal Header -->
@@ -41,8 +55,8 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <div class="form-container">
-                            <div class="row mb-2">
+                        <form>
+                            <!-- <div class="row form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Tên đăng nhập:</label>
                                 </div>
@@ -54,36 +68,36 @@
                                     <span id="er1" class="text-danger">*</span>
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Mật khẩu:</label>
                                 </div>
                                 <div class="col-8 ">
-                                    <input type="password" name="pwd" id="pwd" placeholder="Nhập vào mật khẩu"
+                                    <input type="password" name="pass" id="pass" placeholder="Nhập vào mật khẩu"
                                         class="form-control">
                                 </div>
                                 <div class="col-1">
                                     <span id="er1" class="text-danger">*</span>
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Nhập lại mật khẩu:</label>
                                 </div>
                                 <div class="col-8">
-                                    <input type="password" name="pwd" id="pwd" placeholder="Nhập vào xác nhận mật khẩu"
-                                        class="form-control">
+                                    <input type="password" name="re-pass" id="re-pass"
+                                        placeholder="Nhập vào xác nhận mật khẩu" class="form-control">
                                 </div>
                                 <div class="col-1">
                                     <span id="er1" class="text-danger">*</span>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="row text-center mb-4 mt-4">
                                 <div class="col-12">
                                     <h4>THÔNG TIN CÁ NHÂN</h4>
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Họ và tên:</label>
                                 </div>
@@ -95,66 +109,70 @@
                                     <span id="er1" class="text-danger">*</span>
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Ngày sinh:</label>
                                 </div>
-                                <div class="col-5">
-                                    <input type="text" name="txtNgay" id="txtNgay" placeholder="mm/dd/yyyy"
-                                        class="form-control">
+                                <div class="col-8">
+                                    <input type="date" name="txtNgay" id="txtNgay" class="form-control">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-1">
 
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Giới tính:</label>
                                 </div>
-                                <div class="col-4">
-                                    <input type="radio" name="nam" id="nam">
-                                    <span>Nam</span>
-                                    <input type="radio" name="nu" id="nu">
-                                    <span>Nữ</span>
+                                <div class="col-9 text-left">
+                                    <form action="">
+                                        <input type="radio" name="sex" id="nam" value="Nam" required>
+                                        <span>Nam</span>
+                                        <input type="radio" name="sex" id="nu" value="Nữ" required>
+                                        <span>Nữ</span>
+                                    </form>
+                                    <span id="errSex" class="text-danger"></span>
                                 </div>
-                                <div class="col-5"></div>
+                                <!-- <div class="col-5"></div> -->
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Địa chỉ:</label>
                                 </div>
-                                <div class="col-8 ">
-                                    <input type="text" name="txtAddress" id="txtAddress" placeholder="Nhập vào địa chỉ"
-                                        class="form-control">
+                                <div class="col-9 text-left">
+                                    <input type="text" name="txtAddress" id="txtAddress" placeholder="Nhập vào địa chỉ" class="form-control" onblur="ktAddress()">
+                                    <span id="erAddress"></span>
                                 </div>
-                                <div class="col-1"></div>
+                                <!-- <div class="col-1"></div> -->
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Điện thoại:</label>
                                 </div>
                                 <div class="col-8 ">
-                                    <input type="text" name="txtAddress" id="txtAddress"
+                                    <input type="text" name="txtPhone" id="txtPhone"
                                         placeholder="Nhập vào số điện thoại (9-10 số)" class="form-control">
                                 </div>
                                 <div class="col-1"></div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
                                     <label for="">Email:</label>
                                 </div>
-                                <div class="col-8">
-                                    <input type="email" name="email" id="email" placeholder="Nhập vào email cá nhân theo dạng ten@tencongty.com" class="form-control">
+                                <div class="col-9 text-left">
+                                    <input type="email" name="txtEmail" id="txtEmail"
+                                        placeholder="Nhập vào email cá nhân theo dạng ten@tencongty.com" class="form-control" onblur="ktEmail()">
+                                        <span id="erEmail"></span>
                                 </div>
-                                <div class="col-1"></div>
+                                <!-- <div class="col-1"></div> -->
                             </div>
-                        </div>
+                        </form>
                     </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
                         <div class="col-8 text-right">
-                            <button class="badge-dark btn-success">Đăng ký</button>
+                            <button id="btnSub" class="badge-dark btn-success" onclick="ketqua()">Đăng ký</button>
                         </div>
                         <div class="col-6">
                             <button class="badge-dark btn-danger" data-dismiss="modal">Hủy</button>
@@ -165,11 +183,13 @@
             </div>
         </div>
         <!-- <script>
-            $(document).ready(function() {
-                $("#myBtn").click(function() {
-                    $("#myModal").modal();
-                });
-            });
+            Validator({
+                modal: "#myModal",
+                rules: [
+                    Validator.isRequired("#txtUser"),
+                    Validator.isEmail("#txtEmail"),
+                ]
+            })
         </script> -->
     </div>
 </body>
