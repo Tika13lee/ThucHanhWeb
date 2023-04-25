@@ -5,7 +5,6 @@ function ktRadio() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             selected = true;
-            
             break;
         }
     }
@@ -14,6 +13,20 @@ function ktRadio() {
         return false;
     }
     return true;
+}
+
+//kiểm tra tên
+function ktName(){
+    let ten = document.getElementById('txtName').value;
+    let pattern = /[A-Za-z_]/;
+    if(pattern.test(ten)) {
+        document.getElementById('errName').innerHTML = '';
+        return true;
+    }else{
+        document.getElementById('errName').innerHTML = 'Vui lòng nhập tên là chữ';
+        return false;
+    }
+
 }
 
 // kiểm tra địa chỉ
@@ -54,7 +67,7 @@ function ketqua() {
     // let row_moi = "<tr><td>" + stt + "</td><td>" + user + "</td><td>" + mk + "</td><td>" + re;
     // document.getElementById('tb').innerHTML += row_moi;
 
-    if (ktAddress() && ktEmail() && ktRadio()) {
+    if (ktName() && ktAddress() && ktEmail() && ktRadio()) {
         let name = document.getElementById('txtName').value;
         let ns = document.getElementById('txtNgay').value;
 

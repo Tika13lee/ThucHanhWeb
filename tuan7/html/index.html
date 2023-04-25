@@ -101,13 +101,14 @@
                                 <div class="col-3 text-right">
                                     <label for="">Họ và tên:</label>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-9">
                                     <input type="text" name="txtName" id="txtName"
-                                        placeholder="Nhập vào họ tên (bắt buộc nhập)" class="form-control">
+                                        placeholder="Nhập vào họ tên (bắt buộc nhập)" class="form-control" onblur="ktName()">
+                                    <span id="errName"></span>
                                 </div>
-                                <div class="col-1">
+                                <!-- <div class="col-1">
                                     <span id="er1" class="text-danger">*</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="row mb-2 form-group">
                                 <div class="col-3 text-right">
