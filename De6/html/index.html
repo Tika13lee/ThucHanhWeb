@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="../img/logo.PNG" alt="">
+            </div>
+            <div>
+                <h3>DOAN THANH NIEN THANH PHO HO CHI MINH</h3>
+                <P class="text-danger">DOAN THANH NIEN TRUONG DAI HOC CONG NGHIEP THANH PHO HO CHI MINH</P>
+            </div>
+        </div>
+        <nav class="navbar-brand">
+            <button data-toggle="modal" data-target="#myModal">Dang ky</button>
+        </nav>
+        <div>
+            <div>
+                <img class="rounded-circle" src="../img/ngayhoithanhnien.JPG" alt="">
+            </div>
+        </div>
+        <h2 class="text-center mt-5">DANH SACH DANG KY HOAT DONG MUA HE XANH</h2>
+        <table class="table" id="tb">
+            <tr>
+                <th>STT</th>
+                <th>Ma SV</th>
+                <th>Ten SV</th>
+                <th>Ngay tham gia</th>
+                <th>Email</th>
+                <th>So dien thoai</th>
+            </tr>
+        </table>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>THONG TIN DANG KY</h2>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row form-group">
+                                <h4 class="col-12">Ma sinh vien</h4>
+                                <input type="text" name="txtMa" id="txtMa" class="form-control" placeholder="Ma sinh vien" onblur="ktMa()">
+                                <span id="errMa" class="text-danger">*</span>
+                            </div>
+                            <div class="row form-group">
+                                <h4 class="col-12">Ho ten</h4>
+                                <input type="text" name="txtTen" id="txtTen" class="form-control" placeholder="Ho ten" onblur="ktTen()">
+                                <span id="errTen" class="text-danger">*</span>
+                            </div>
+                            <div class="row form-group">
+                                <h4 class="col-12">Ngay tham gia</h4>
+                                <input type="date" name="txtNgay" id="txtNgay" class="form-control">
+                                <span class="text-danger">*</span>
+                            </div>
+                            <div class="row form-group">
+                                <h4 class="col-12">Email</h4>
+                                <input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Dia chi email" onblur="ktEmail()">
+                                <span id="errEmail" class="text-danger">*</span>
+                            </div>
+                            <div class="row form-group">
+                                <h4 class="col-12">So dien thoai</h4>
+                                <input type="text" name="txtPhone" id="txtPhone" class="form-control" placeholder="So dien thoai" onblur="ktDT()">
+                                <span id="errDT" class="text-danger">*</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="loadData()">Luu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
