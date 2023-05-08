@@ -46,11 +46,24 @@ function ktPhone() {
     }
 }
 
+
+function ktNgay() {
+    var now = new Date();
+    var ngay = new Date(document.getElementById('txtNgay').value);
+    if (ngay.getDate() - now.getDate() > 7) {
+        document.getElementById('errNgay').innerHTML = '';
+        return true;
+    } else {
+        document.getElementById('errNgay').innerHTML = 'Vui long chọn ngày sau ngày hiện tại 7 ngày';
+        return false;
+    }
+}
+
 var stt = 1;
 
 function loadData() {
 
-    if (ktMa() && ktTen() && ktEmail() && ktPhone()) {
+    if (ktMa() && ktTen() && ktNgay() && ktEmail() && ktPhone()) {
         var ma = document.getElementById('txtMa').value;
         var ten = document.getElementById('txtTen').value;
         var ngay = document.getElementById('txtNgay').value;
