@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Add product</button>
+
+        <table id="exampleAPI" class="table table-bordered text-center">
+            <thead class="bg-primary text-uppercase">
+                <tr>
+                    <th>STT</th>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Ngày nhập</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="">THÔNG TIN SẢN PHẨM</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="">Tên sản phẩm</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" name="txtName" id="txtName" placeholder="Tên sản phẩm" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="">Hình ảnh</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" name="txtImg" id="txtImg" placeholder="Link hình ảnh" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="">Ngày nhập</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="date" name="txtNgay" id="txtNgay" placeholder="Ngày nhập sản phẩm" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-5"></div>
+                                <div class="col-2">
+                                    <button onclick="addProduct()" class="btn btn-success">Thêm</button>
+                                </div>
+                                <div class="col-5"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Thêm sản phẩm</button>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>THÔNG TIN SẢN PHẨM</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row form-group">
+                                <label for="">Tên sản phẩm</label>
+                                <input type="text" id="txtName" class="form-control">
+                            </div>
+                            <div class="row form-group">
+                                <label for="">Hình ảnh</label>
+                                <input type="text" id="txtImg" class="form-control">
+                            </div>
+                            <div class="row form-group">
+                                <label for="">Ngày nhập</label>
+                                <input type="date" id="txtNgay" class="form-control">
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-12 text-center">
+                                    <input type="button" class="btn btn-success" value="Add" onclick="addProduct()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-danger">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table id="exampleAPI" class="table table-bordered text-center">
+            <thead class="bg-info text-uppercase">
+                <tr>
+                    <th>STT</th>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Ngày nhập</th>
+                    <th>Cập nhật</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
