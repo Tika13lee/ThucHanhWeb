@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "zenMode.hideStatusBar": true,
+    "window.autoDetectColorScheme": false,
+    "window.closeWhenEmpty": false,
+    "workbench.preferredHighContrastLightColorTheme": "Default Dark Modern",
+    "workbench.preferredLightColorTheme": "Default Dark Modern"
 }
