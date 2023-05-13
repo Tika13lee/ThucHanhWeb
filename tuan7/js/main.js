@@ -60,12 +60,6 @@ function ktEmail() {
 // load vào table
 function ketqua() {
     let stt = 1;
-    // let user = document.getElementById('txtUser').value;
-    // let mk = document.getElementById('pass').value;
-    // let re = document.getElementById('re-pass').value;
-
-    // let row_moi = "<tr><td>" + stt + "</td><td>" + user + "</td><td>" + mk + "</td><td>" + re;
-    // document.getElementById('tb').innerHTML += row_moi;
 
     if (ktName() && ktAddress() && ktEmail() && ktRadio()) {
         let name = document.getElementById('txtName').value;

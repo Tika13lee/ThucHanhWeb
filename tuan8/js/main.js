@@ -26,9 +26,9 @@ function ktMK() {
 
 function ktNgay() {
     var today = new Date();
-    var nk = document.getElementById('dateNK').value;
-    if (today >= nk) {
-        document.getElementById('erNgayK').innerHTML = 'Vui lòng chọn ngày';
+    var nk = new Date(document.getElementById('dateNK').value);
+    if (today.getDate() >= nk.getDate()) {
+        document.getElementById('erNgayK').innerHTML = 'Vui lòng chọn ngày lớn hơn ngày hiện tại';
         return false;
     } else {
         document.getElementById('erNgayK').innerHTML = '';
@@ -41,19 +41,21 @@ function loadData() {
     var stt = 1;
     var ckb = document.getElementsByName('LDV');
     var t = 0;
+    var dv = "";
     for (var i = 0; i < ckb.length; i++) {
         if (ckb[i].checked === true) {
             t += 50000;
+            dv += ckb[i].value + ', ';
         }
     }
+
     if (ktMaBN() && ktMK() && ktNgay()) {
         let ma = document.getElementById('txtMaBN').value;
         let mk = document.getElementById('txtMK').value;
         let nk = document.getElementById('dateNK').value;
         let chuyenKhoa = document.getElementById('chuyenKhoa').value;
 
-        let row_moi = "<tr><td>" + stt + "</td><td>" + ma + "</td><td>" + mk + "</td><td>" + nk + "</td><td>" + t + "</td><td>" + chuyenKhoa + "</td></tr>";
-
+        let row_moi = "<tr><td>" + stt + "</td><td>" + ma + "</td><td>" + mk + "</td><td>" + nk + "</td><td>" + dv + "</td><td>" + t + "</td><td>" + chuyenKhoa + "</td></tr>";
         document.getElementById('tb').innerHTML += row_moi;
 
         stt++;

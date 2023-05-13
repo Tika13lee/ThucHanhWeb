@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tuan8</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -13,10 +13,19 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="nav m-3">
-            <button>Trang chủ</button>
-            <button class="ml-3" data-target="#myModal" data-toggle="modal">Đặt lịch</button>
+    <div class="">
+        <div>
+            <img class="w-100" src="https://bo-api.medpro.com.vn:5000/static/images/medpro/web/home_banner_web_11.png?t=11111" alt="">
+        </div>
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav bg-light">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#myModal">Đặt lịch</a>
+                </li>
+            </ul>
         </nav>
         <table class="table table-bordered text-center" id="tb">
             <tr>
@@ -24,6 +33,7 @@
                 <th>Mã bệnh nhân</th>
                 <th>Mật khẩu</th>
                 <th>Ngày khám</th>
+                <th>Dịch vụ</th>
                 <th>Phụ thu dịch vụ</th>
                 <th>Chuyên khoa</th>
             </tr>
@@ -61,9 +71,9 @@
                             <div class="row form-group">
                                 <label for="" class="col-3 text-right">Loại dịch vụ</label>
                                 <div class="col-9 " id="loai">
-                                    <input type="checkbox" name="LDV">Khám bệnh theo yêu cầu
-                                    <input type="checkbox" name="LDV">Điều trị ngoại trú
-                                    <input type="checkbox" name="LDV">Bác sĩ theo yêu cầu
+                                    <input type="checkbox" name="LDV" value="Khám bệnh theo yêu cầu">Khám bệnh theo yêu cầu
+                                    <input type="checkbox" name="LDV" value="Điều trị ngoại trú">Điều trị ngoại trú
+                                    <input type="checkbox" name="LDV" value="Bác sĩ theo yêu cầu">Bác sĩ theo yêu cầu
                                 </div>
                             </div>
                             <div class="row form-group">
