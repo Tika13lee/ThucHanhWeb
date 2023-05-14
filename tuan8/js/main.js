@@ -54,7 +54,7 @@ function loadData() {
         let mk = document.getElementById('txtMK').value;
         let nk = document.getElementById('dateNK').value;
         let chuyenKhoa = document.getElementById('chuyenKhoa').value;
-
+    
         let row_moi = "<tr><td>" + stt + "</td><td>" + ma + "</td><td>" + mk + "</td><td>" + nk + "</td><td>" + dv + "</td><td>" + t + "</td><td>" + chuyenKhoa + "</td></tr>";
         document.getElementById('tb').innerHTML += row_moi;
 

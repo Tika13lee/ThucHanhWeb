@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De11</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="text-center">
+        <img class="w-50" src="../images/edu-logo-2.png" alt="">
+    </div>
+    <div class="d-flex w-100 mt-5">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Highlights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hoạt động</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Danh sách trường</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ưu đãi</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <h3>DANH SÁCH ĐĂNG KÝ TƯ VẤN</h3>
+            <table id="tb" class="table table-bordered">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên </th>
+                    <th>Số điện thoại</th>
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                    <th>Năm</th>
+                    <th>Địa điểm tư vấn</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>ĐĂNG KÝ THAM DỰ EDUUK MIỄN PHÍ</h4>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <input class="form-control" type="text" name="txtName" id="txtName"
+                                    placeholder="Họ Tên" onblur="ktName()">
+                                <span id="errName" class="text-danger">&#40;*&#41;</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <input class="form-control" type="text" name="txtPhone" id="txtPhone"
+                                    placeholder="Số điện thoại" onblur="ktPhone()">
+                                <span id="errPhone" class="text-danger">&#40;*&#41;</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <input class="form-control" type="email" name="txtEmail" id="txtEmail"
+                                    placeholder="Email" onblur="ktEmail()">
+                                <span id="errEmail" class="text-danger">&#40;*&#41;</span>
+
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <input class="form-control" type="text" name="txtAddress" id="txtAddress"
+                                    placeholder="Địa chỉ" onblur="ktAddress()">
+                                <span id="errAddress" class="text-danger">&#40;*&#41;</span>
+
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <input class="form-control" type="text" name="txtYear" id="txtYear"
+                                    placeholder="Bạn dự định du học năm nào?" onblur="ktYear()">
+                                <span id="errYear" class="text-danger">&#40;*&#41;</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Bạn muốn tư vấn ở Hà Nội hay TPHCM?</span><br>
+                            <input type="radio" name="city" id="" value="Hà Nội">Hà Nội
+                            <input type="radio" name="city" id="" value="TPHCM">TPHCM
+                        </div>
+                        <div>
+                            <button class="btn btn-info check" data-dismiss="modal" onclick="ketqua()">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-right">21108651-LeThiThuyKieu-DHKTPM17C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-success ">
+        <p class="p-2">21108651-LeThiThuyKieu-DHKTPM17C</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
