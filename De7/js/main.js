@@ -25,27 +25,20 @@ function ktName() {
 function ktKH() {
     let flag = 0;
     let kh = document.getElementsByName("customer");
-    // for (let i = 0; i < kh.length; i++) {
-    //     if (kh[i].checked === true) {
-    //         document.getElementById('errKH').innerHTML = '';
-    //         return true;
-    //     }
-    // }
-    // if (flag == 0) {
-    //     document.getElementById('errKH').innerHTML = 'Vui lòng chọn khách hàng';
-    //     return false;
-    // }
     for (let i = 0; i < kh.length; i++) {
         if (kh[i].checked === true) {
             document.getElementById('errKH').innerHTML = '';
+            flag = 1;
             return true;
-        }else{
-            
         }
+    }
+    if (flag == 0) {
+        document.getElementById('errKH').innerHTML = 'Vui lòng chọn khách hàng';
+        return false;
     }
 }
 
-function khuyenMai(){
+function khuyenMai() {
     let km = document.getElementsByName('sale');
     let khuyenMai;
     for (let i = 0; i < km.length; i++) {
@@ -58,22 +51,27 @@ function khuyenMai(){
     return khuyenMai;
 }
 
-function chiSo(){
+function chiSo() {
     let m = document.getElementById('month').value;
     let chiSo;
-    if(m == 1){
+    if (m == 1) {
         chiSo = 121;
-    }else if(m == 2){
+    } else if (m == 2) {
         chiSo = 130;
-    }else if(m == 3){
+    } else if (m == 3) {
         chiSo = 189;
-    }else if(m == 4){
+    } else if (m == 4) {
         chiSo = 154;
-    }else{
+    } else {
         chiSo = 'Chưa tới kỳ thanh toán'
     }
     return chiSo;
 }
+
+let change = document.getElementById('month');
+    change.addEventListener('change', function () {
+        document.getElementById('chiSo').value = chiSo();
+    })
 
 let stt = 1;
 function ketqua() {
@@ -94,8 +92,6 @@ function ketqua() {
         let ma = document.getElementById('maKH').value;
         let name = document.getElementById('txtName').value;
         let month = document.getElementById('month').value;
-
-
 
         let row_new = "<tr><td>" + stt + "</td><td>" + khachHang + "</td><td>" + ma + "</td><td>" + name + "</td><td>" + month + "</td><td>" + chiSo() + "</td><td>" + khuyenMai() + "</td></tr>";
 
