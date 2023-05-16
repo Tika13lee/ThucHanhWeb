@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De8</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .navbar-nav {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-around w-100 bg-light border p-3">
+        <div class="text-center">
+            <h4 class="text-danger">ĐOÀN THANH NIÊN CỘNG SẢN HỒ CHÍ MINH</h4>
+            <h2 class="text-primary">ĐOÀN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP.HCM</h2>
+        </div>
+        <div>
+            <img style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_IUH.png" alt="">
+        </div>
+    </div>
+    <nav class="navbar navbar-expand bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <img class="navbar-brand" src="../images/Huy_Hiệu_Đoàn.png" alt="">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sự kiện</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hỗ trợ sinh viên</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Đăng ký tình nguyện</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-success">Thông tin đăng ký</h3>
+                    <button class="btn close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Mã số sinh viên</span>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="text" name="txtMa" id="txtMa"
+                                    placeholder="Mã số sinh viên" onblur="ktMa()">
+                                <span id="errMa" class="text-danger font-italic">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Họ và tên sinh viên</span>
+                            </div>
+                            <div class="col-5">
+                                <input class="form-control" type="text" name="txtHo" id="txtHo"
+                                    placeholder="Họ và tên đệm" onblur="ktHo()">
+                                <span id="errHo" class="text-danger font-italic">(*)</span>
+                            </div>
+                            <div class="col-4">
+                                <input class="form-control" type="text" name="txtTen" id="txtTen" placeholder="Tên"
+                                    onblur="ktTen()">
+                                <span id="errTen" class="text-danger font-italic">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Giới tính</span>
+                            </div>
+                            <div class="col-9">
+                                <input type="radio" name="sex" id="" value="Nam">Nam
+                                <input type="radio" name="sex" id="" value="Nữ">Nữ
+                                <span id="errSex" class="text-danger font-italic"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Điện thoại</span>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="text" name="txtPhone" id="txtPhone"
+                                    placeholder="Điện thoại" onblur="ktPhone()">
+                                <span id="errPhone" class="text-danger font-italic">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Ngày có thể bắt đầu</span>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-control" type="date" name="txtDate" id="txtDate" onblur="ktDate()">
+                                <span id="errDate" class="text-danger font-italic"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Hoạt động đăng ký</span>
+                            </div>
+                            <div class="col-9">
+                                <select name="activity" id="activity" class="form-control">
+                                    <option value=""></option>
+                                    <option value="Thanh niên tình nguyện hè">Thanh niên tình nguyện hè</option>
+                                    <option value="Vệ sinh môi trường">Vệ sinh môi trường</option>
+                                    <option value="Tiếp sức mùa thi">Tiếp sức mùa thi</option>
+                                    <option value="Tình nguyện viên chống dịch">Tình nguyện viên chống dịch</option>
+                                </select>
+                                <span id="errPhone" class="text-danger font-italic"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-3">
+                                <span>Hoạt động tình nguyện</span>
+                            </div>
+                            <div class="col-9">
+                                <input type="checkbox" name="hd" id="" value="Ngắn hạn">Ngắn hạn
+                                <input type="checkbox" name="hd" id="" value="Thường xuyên">Thường xuyên
+                                <input type="checkbox" name="hd" id="" value="Dài hạn">Dài hạn
+                                <span id="errPhone" class="text-danger font-italic"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <button class="btn btn-success mr-2 ketQua">Đăng ký</button>
+                                <button class="btn btn-success">Xóa rỗng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-right text-info">21108651-LeThiThuyKieu-DHKTPM17C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between p-3 border">
+        <div>&lt;form&gt;</div>
+        <div class="text-right ">
+            <img class="w-25"
+                src="https://thuviendohoa.com.vn/image/data/DH021A-vector-tranh-co-dong/TCD021-tranh-co-dong-tuyen-truyen.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="m-4">
+        <h3>DANH SÁCH SINH VIÊN ĐĂNG KÝ</h3>
+        <table id="tb" class="table table-bordered text-center">
+            <tr>
+                <th>STT</th>
+                <th>Mã số sinh viên</th>
+                <th>Họ và tên</th>
+                <th>Giới tính</th>
+                <th>Điện thoại</th>
+                <th>Ngày bắt đầu</th>
+                <th>Hoạt động đăng ký</th>
+                <th>Hoạt động tình nguyện</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

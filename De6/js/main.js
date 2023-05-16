@@ -36,7 +36,7 @@ function ktEmail() {
 
 function ktPhone() {
     var dt = document.getElementById('txtMa').value;
-    var pattern = /[0-9]{10}/;
+    var pattern = /^[0-9]{10}$/;
     if (pattern.test(dt)) {
         document.getElementById('errDT').innerHTML = '';
         return true;
@@ -60,7 +60,6 @@ function ktNgay() {
 }
 
 var stt = 1;
-
 function loadData() {
 
     if (ktMa() && ktTen() && ktNgay() && ktEmail() && ktPhone()) {
@@ -70,10 +69,17 @@ function loadData() {
         var mail = document.getElementById('txtEmail').value;
         var dt = document.getElementById('txtPhone').value;
 
-        var row_new = "<tr> <td>" + stt + " <td> <td>" + ma + " <td> <td>" + ten + " <td> <td>" + ngay + " <td> <td>" + mail + " <td> <td>" + dt + " <td> </tr>";
+        var row_new = "<tr><td>" + stt + "</td><td>" + ma + "</td><td>" + ten + "</td><td>" + ngay + "</td><td>" + mail + "</td><td>" + dt + "</td></tr>";
 
         document.getElementById('tb').innerHTML += row_new;
 
     }
     stt++;
 }
+
+var check = document.querySelector('.btn');
+console.log(check);
+check.addEventListener('click', function(e){
+    e.preventDefault();
+    loadData();
+})
